@@ -1,4 +1,4 @@
-<!-- 
+<!--
  - Copyright 1999-2011 Alibaba Group.
  -  
  - Licensed under the Apache License, Version 2.0 (the "License");
@@ -18,19 +18,31 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.alibaba</groupId>
-		<artifactId>dubbo-parent</artifactId>
+		<artifactId>dubbo-filter</artifactId>
 		<version>2.8.4</version>
 	</parent>
-	<artifactId>dubbo-filter</artifactId>
-	<packaging>pom</packaging>
+	<artifactId>dubbo-filter-hystrix</artifactId>
+	<packaging>jar</packaging>
 	<name>${project.artifactId}</name>
-	<description>The filter module of dubbo project</description>
+	<description>The hystrix module of dubbo project</description>
 	<properties>
 		<skip_maven_deploy>true</skip_maven_deploy>
 	</properties>
-	<modules>
-		<module>dubbo-filter-cache</module>
-		<module>dubbo-filter-validation</module>
-		<module>dubbo-filter-hystrix</module>
-	</modules>
+	<dependencies>
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>dubbo-rpc-api</artifactId>
+			<version>${project.parent.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.netflix.hystrix</groupId>
+			<artifactId>hystrix-core</artifactId>
+			<version>1.5.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.netflix.hystrix</groupId>
+			<artifactId>hystrix-metrics-event-stream</artifactId>
+			<version>1.5.2</version>
+		</dependency>
+	</dependencies>
 </project>
