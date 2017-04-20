@@ -66,3 +66,9 @@ $RECYCLE.BIN/
 # =========================
 .idea/
 *.iml
+
+# Eclipse ignore
+# =========================
+.settings/
+.project
+.classpath
