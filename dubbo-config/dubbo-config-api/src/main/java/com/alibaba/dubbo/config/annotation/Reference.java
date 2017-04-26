@@ -114,4 +114,6 @@ public @interface Reference {
 
     String[] registry() default {};
 
+    String circuitbreak() default "";
+
 }

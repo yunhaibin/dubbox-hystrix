@@ -1,1 +1,1 @@
-hystrix=com.alibaba.dubbo.hystrix.filter.HystrixFilter
+circuitbreak=com.alibaba.dubbo.circuitbreak.filter.CircuitBreakerFilter

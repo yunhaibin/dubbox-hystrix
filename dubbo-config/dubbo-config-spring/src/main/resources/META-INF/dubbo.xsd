@@ -69,6 +69,11 @@
 				<xsd:documentation><![CDATA[ Use service cache, lru/threadlocal/jcache. ]]></xsd:documentation>
 			</xsd:annotation>
 		</xsd:attribute>
+		<xsd:attribute name="circuitbreak" type="xsd:string" use="optional">
+			<xsd:annotation>
+				<xsd:documentation><![CDATA[ Use circuitbreak, hystrix/xxx. ]]></xsd:documentation>
+			</xsd:annotation>
+		</xsd:attribute>
 	</xsd:complexType>
 	
 	<xsd:complexType name="abstractInterfaceType">

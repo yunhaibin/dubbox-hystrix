@@ -593,6 +593,10 @@ public class Constants {
 
     public static final String GENERIC_SERIALIZATION_BEAN          = "bean";
 
+    /**
+     * 断路器开关标识
+     */
+    public static final String CIRCUIT_BREAKER_KEY                 = "circuitbreak";
     /*
      * private Constants(){ }
      */
